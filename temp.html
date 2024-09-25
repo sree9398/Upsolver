@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover to Show Text</title>
+  <style>
+    /* Hide the text initially */
+    .hidden-text {
+      display: none;
+      position: absolute;
+      background-color: black;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      bottom: 10px; /* Position text near the bottom of the image */
+      left: 10px;   /* Adjust position as needed */
+    }
+
+    /* Show the text when hovering over the image */
+    .image-container:hover .hidden-text {
+      display: block;
+    }
+
+    /* Positioning for image and text */
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="https://via.placeholder.com/300" alt="Sample Image" width="300">
+    <!-- This text will appear when hovering over the image -->
+    <span class="hidden-text">This is the image description!</span>
+  </div>
+
+</body>
+</html>
